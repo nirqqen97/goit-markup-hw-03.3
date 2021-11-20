@@ -7,6 +7,7 @@
     --accent-color:#2196F3;
     --footer-text-color:#FFFFFF99;
     --team-background-color:#F5F4FA;
+    --border-color:#EEEEEE;
 
 }
 img{
@@ -30,6 +31,7 @@ img{
 }
 .header-logo{
     margin-right:70px;
+    color: var(--accent-color);
 }
 .header-connect{
     margin-left: auto;
@@ -133,6 +135,7 @@ color:var(--accent-color)
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    max-width: 696px;
     
 }
 /*---------------------------------hero-------------------------*/
@@ -140,7 +143,7 @@ color:var(--accent-color)
 .hero-right{
     padding-top: 200px;
     padding-bottom: 280px;
-
+    
 }
 
 
@@ -152,32 +155,25 @@ color:var(--accent-color)
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--first-button-color);
-    padding-left: 452px;
-    padding-right: 452px;
-    max-width: 696px;
-    max-height: 120px;
-    
+        
 }
 .hero-btn{
     font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
+    border: none;
     letter-spacing: 0.06em;
     color: var(--first-button-color);
     background-color: var(--accent-color);
     margin-top: 30px;
-    margin-left: 700px;
+    width: 200px;
+    height: 50px;
+    margin-left: 500px;
+   
 }
 /*---------------------------------about-------------------------*/
-.about-item:first-child{
-    padding-left: 215px;
 
-}
 
 .about-item{
     padding-top: 50px;
@@ -212,11 +208,9 @@ color:var(--accent-color)
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color); 
-    padding-top: 94px;
-    padding-left: 612px;
-    max-width: 376px;
-    max-height: 42px;
-  margin-right: 612px;
+    margin-top: 94px;
+ 
+ 
 }
 .about-second-item{
     padding-top: 50px;
@@ -224,9 +218,7 @@ color:var(--accent-color)
     padding-bottom: 94px;
     justify-content: space-between;
 }
-.about-second-item:first-child{
-    padding-left: 215px;
-}
+
 /*---------------------------------team-------------------------*/
 .team-title{
     font-weight: bold;
@@ -236,10 +228,7 @@ color:var(--accent-color)
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     padding-top: 94px;
-    padding-left: 668px;
-    margin-right: 668px;
-    max-height: 42px;
-    
+  
     
 }
 .team-item-title{
@@ -262,9 +251,8 @@ color:var(--accent-color)
     
     }
     .team-list{
-        padding-left: 215px;
-        padding-right: 215px    ;
-        
+        padding-inline-start: 0px;
+
     }
     .team-item{
         margin-left: 30px;
@@ -318,16 +306,11 @@ color:var(--accent-color)
     letter-spacing: 0.06em;
     margin-top: 4px;
 }
-.porfolio-hero-list{
-    padding-left: 517px;
-}
+
 .porfolio-hero-item {
     margin-left: 8px;
 }
-.porfolio-hero-item:last-child {
-    margin-left: 8px;
-    padding-right: 495px;
-}
+
 footer{
     background-color: var(--header-background-color);
 }
@@ -340,6 +323,8 @@ line-height: 26px;
 text-align: center;
 letter-spacing: 0.03em;    
 border: none;
+
+
 }
 .current{
     color: var(--accent-color);
@@ -359,23 +344,16 @@ address {
 
 }
 .team{
-    color: var(--team-background-color)
+    background-color: var(--team-background-color);
 }
 .container{
-    width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-.header-logo-footer{
-    padding-left: 215px;
-    padding-bottom: 20px;
-    margin-top: 60px;
    
 }
-.contacts-list{
-    padding-left: 215px;
-    
-}
+
 .contacts-item{
     margin-bottom: 9px;
 }
@@ -385,9 +363,28 @@ margin-right: 30px;
 }
 .porfolio-hero-item1:nth-child(3n) {
     margin-right: 0;}
-
+/*
 .porfolio-hero-list1{
     padding-right: 215px;
     flex-wrap: wrap;
     padding-left: 215px;
 }
+*/
+.porfolio-hero-list1{
+    flex-wrap:wrap;
+    padding-inline-start: 0px;
+
+}
+    
+
+.porfolio-hero-list{
+    margin: 0 auto;
+}
+.main-wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+}
+
