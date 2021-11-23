@@ -315,14 +315,23 @@ footer{
     background-color: var(--header-background-color);
 }
 .portfolio-hero-btn{
+    display: inline-block;
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+
+    background-color: var(--second-background-color);
     font-family: inherit;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-letter-spacing: 0.03em;    
-border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-title-color);
+    cursor: pointer;
+
 
 
 }
@@ -373,7 +382,11 @@ margin-right: 30px;
 .porfolio-hero-list1{
     flex-wrap:wrap;
     padding-inline-start: 0px;
-
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    justify-content: center;
 }
     
 
